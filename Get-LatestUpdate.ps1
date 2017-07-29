@@ -56,7 +56,7 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
 [CmdletBinding()]
 Param(
     [Parameter(Mandatory=$False, HelpMessage="JSON source for the update KB articles.")]
-    [string] $StartKB = 'https://support.microsoft.com/api/content/asset/4000816',
+    [string] $StartKB = 'https://support.microsoft.com/app/content/api/content/asset/en-us/4000816',
 
     [Parameter(Mandatory=$False, HelpMessage="Windows build number.")]
     [ValidateSet('15063','14393','10586','10240')]
