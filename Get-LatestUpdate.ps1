@@ -1,3 +1,4 @@
+
 <#
 .SYNOPSIS
 Get the latest Cumulative update for Windows
@@ -23,7 +24,8 @@ Windows 10 Build Number used to filter avaible Downloads
     10586 - Windows 10 Version 1511 
     14393 - Windows 10 Version 1607 and Windows Server 2016
     15063 - Windows 10 Version 1703
-
+    16299 - WIndows 10 Version 1709
+    
 .PARAMETER Filter
 Specify a specific search filter to change the target update behaviour. The default will only Cumulative updates for x86 and x64.
 
@@ -59,8 +61,8 @@ Param(
     [string] $StartKB = 'https://support.microsoft.com/app/content/api/content/asset/en-us/4000816',
 
     [Parameter(Mandatory=$False, HelpMessage="Windows build number.")]
-    [ValidateSet('15063','14393','10586','10240')]
-    [string] $BUild = '15063',
+    [ValidateSet('16299','15063','14393','10586','10240')]
+    [string] $BUild = '16299',
 
     [Parameter(Mandatory=$False, HelpMessage="Windows update Catalog Search Filter.")]
     [ValidateSet('x64','x86','Cumulative','Delta',$null)]
