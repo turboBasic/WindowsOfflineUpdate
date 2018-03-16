@@ -34,16 +34,16 @@
     PrivateData = @{
         PSData = @{
             # What keywords represent your PowerShell module? (eg. cloud, tools, framework, vendor)
-            Tags = @('tools', 'update', 'deployment')
+            Tags = @('tools', 'update', 'deployment', 'windows', 'windows-10', 'windows-server-2016')
 
             # What software license is your code being released under? (see https://opensource.org/licenses)
-            LicenseUri = ''
+            LicenseUri = 'https://choosealicense.com/licenses/mit'
 
             # What is the URL to your project's website?
             ProjectUri = 'https://github.com/turboBasic/WindowsOfflineUpdate'
 
             # What is the URI to a custom icon file for your project? (optional)
-            IconUri = ''
+            IconUri = 'https://gist.githubusercontent.com/turboBasic/9dfd228781a46c7b7076ec56bc40d5ab/raw/03942052ba28c4dc483efcd0ebf4bfc6809ed0d0/hexagram3D.png'
 
             # What new features, bug fixes, or deprecated features, are part of this release?
             ReleaseNotes = @'
