@@ -1,8 +1,10 @@
-# Module internal variables
+#region Module internal variables
+
+#endregion
 
 
 
-# Module initialization
+#region Module initialization
 
 foreach ($subDir in "private", "public")
 {
@@ -19,8 +21,15 @@ foreach ($subDir in "private", "public")
     New-Variable -Name "${subDir}Functions" -Value $currentFunctions -Scope Script -Option ReadOnly
 }
 
-# $privateFunctions: list of all functions in .\private directory
-# $publicFunctions:  list of all functions in .\public directory
+    # $privateFunctions: list of all functions in .\private directory
+    # $publicFunctions:  list of all functions in .\public directory
+
+#endregion
 
 
 
+#region Exporting module members
+
+Export-ModuleMember -Function $publicFunctions
+
+#endregion
