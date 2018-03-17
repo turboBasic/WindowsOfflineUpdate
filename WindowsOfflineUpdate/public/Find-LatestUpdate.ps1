@@ -80,8 +80,8 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
     )
 
     # download JSON with updates
-    Write-Verbose "Downloading $startKB to retrieve the list of updates"
-    $updates = Get-UpdateJson $startKB
+    Write-Verbose "Downloading $( $script:startKB ) to retrieve the list of updates"
+    $updates = Get-UpdateJson $script:startKB
 
 
     # Get list of all articles related to the requested build
@@ -116,12 +116,5 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
     $kbGUIDs |
         Find-AssetUri |
         Select-Object -Unique
-
-
-    <#
-        ForEach-Object {
-            [psCustomObject] @{ Source = $_ }
-        }
-    #>
 
 }

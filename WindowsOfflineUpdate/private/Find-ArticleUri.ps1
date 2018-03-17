@@ -6,9 +6,7 @@ function Find-ArticleUri {
         [Array] $Article
     )
 
-    Begin {
-        $uriTemplate = 'http://www.catalog.update.microsoft.com/Search.aspx?q=KB{0}'
-    }
+    Begin {}
 
     Process {
         foreach ($oneArticle in $Article) {
@@ -19,7 +17,7 @@ function Find-ArticleUri {
                     Select-String -allMatches -pattern '(?x) (\d+ \.){1,3} (\* | \d+)' |
                     ForEach-Object { $_.Matches.Value -as [Version] }
 
-                uri = $uriTemplate -f $oneArticle.articleId
+                uri = $script:updateCatalogSearchLink -f $oneArticle.articleId
             }
         }
     }

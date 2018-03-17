@@ -1,12 +1,14 @@
 # PSake makes variables declared here available in other scriptblocks
+
 # Init some things
 Properties {
+
     # Find the build folder based on build system
-        $ProjectRoot = $ENV:BHProjectPath
-        if(-not $ProjectRoot)
-        {
-            $ProjectRoot = Resolve-Path $PSScriptRoot\..
-        }
+    $ProjectRoot = $ENV:BHProjectPath
+    if(-not $ProjectRoot)
+    {
+        $ProjectRoot = Resolve-Path $PSScriptRoot\..
+    }
 
     $Timestamp = Get-Date -UFormat "%Y%m%d-%H%M%S"
     $PSVersion = $PSVersionTable.PSVersion.Major
@@ -20,7 +22,9 @@ Properties {
     }
 }
 
+
 Task Default -Depends Test
+
 
 Task Init {
     $lines
@@ -29,6 +33,7 @@ Task Init {
     Get-Item ENV:BH*
     "`n"
 }
+
 
 Task Test -Depends Init  {
     $lines
@@ -51,6 +56,7 @@ Task Test -Depends Init  {
     }
 
     Remove-Item "$ProjectRoot\$TestFile" -Force -ErrorAction SilentlyContinue
+
     # Failed tests?
     # Need to tell psake or it will proceed to the deployment. Danger!
     if($TestResults.FailedCount -gt 0)
@@ -59,6 +65,7 @@ Task Test -Depends Init  {
     }
     "`n"
 }
+
 
 Task Build -Depends Test {
     $lines
@@ -81,11 +88,12 @@ Task Build -Depends Test {
     }
 }
 
+
 Task Deploy -Depends Build {
     $lines
 
     $Params = @{
-        Path = "$ProjectRoot"
+        Path = "$ProjectRoot\Build"
         Force = $true
         Recurse = $false # We keep psdeploy artifacts, avoid deploying those : )
     }

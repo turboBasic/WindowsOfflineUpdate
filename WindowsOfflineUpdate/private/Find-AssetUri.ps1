@@ -14,7 +14,6 @@ function Find-AssetUri {
     )
 
     BEGIN {
-        $updateCatalog =    'http://www.catalog.update.microsoft.com/DownloadDialog.aspx'
         $assetUriPattern =  "https?://download\.windowsupdate\.com\/[^ \'\""]+"
         $postBodyTemplate = '"size": 0,  "uidInfo": "{0}",  "updateID": "{0}"' -replace ' ', ''
     }
@@ -23,7 +22,7 @@ function Find-AssetUri {
         $postBody = @{ updateIDs = "[{$( $postBodyTemplate -f $GUID )}]" }
 
         Write-Verbose "Download description of asset $GUID"
-        Invoke-WebRequest -Uri $updateCatalog -Method Post -Body $postBody |
+        Invoke-WebRequest -Uri $script:updateCatalogDownloadLink -Method Post -Body $postBody |
             Select-Object -ExpandProperty Content |
             Select-String -AllMatches -Pattern $assetUriPattern |
             ForEach-Object {
