@@ -16,7 +16,7 @@
     Description = 'Powershell module for finding, downloading and injecting updates into Windows and Windows Server offline installation images'
 
     # Minimum PowerShell version supported by this module (optional, recommended)
-    PowerShellVersion = '5.0'
+    PowerShellVersion = '5.1.0.0'
 
     # Which PowerShell Editions does this module work with? (Core, Desktop)
     CompatiblePSEditions = @('Desktop', 'Core')

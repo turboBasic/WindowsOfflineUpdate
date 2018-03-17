@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/0si7o4fmm6j7mvtp?svg=true)](https://ci.appveyor.com/project/mao/windowsofflineupdate)
+
 # [WindowsOfflineUpdate](https://github.com/turboBasic/WindowsOfflineUpdate)
 
 ## ![0xHexagram][hexagram]
