@@ -1,4 +1,4 @@
-@{
+﻿@{
     # If authoring a script module, the RootModule is the name of your .psm1 file
     RootModule = 'WindowsOfflineUpdate.psm1'
 
