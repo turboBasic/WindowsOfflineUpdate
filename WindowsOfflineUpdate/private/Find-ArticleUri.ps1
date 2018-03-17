@@ -7,7 +7,7 @@ function Find-ArticleUri {
     )
 
     Begin {
-        $uriTemplate = 'http://www.catalog.update.microsoft.com/Search.aspx?q=KB${0}'
+        $uriTemplate = 'http://www.catalog.update.microsoft.com/Search.aspx?q=KB{0}'
     }
 
     Process {

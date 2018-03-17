@@ -79,15 +79,9 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
         $Filter = @( "Cumulative", "x64" )
     )
 
-
-    # link to JSON with the list of KB articles with updates
-    $startKB = 'https://support.microsoft.com/app/content/api/content/asset/en-us/4000816'
-
-
     # download JSON with updates
     Write-Verbose "Downloading $startKB to retrieve the list of updates"
-    $updates = Invoke-WebRequest -Uri $startKB |
-        Select-Object -ExpandProperty Content
+    $updates = Get-UpdateJson $startKB
 
 
     # Get list of all articles related to the requested build
@@ -98,7 +92,6 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
     $kbId = Find-ArticleUri -article $articles |
         Sort-Object -Property Version -Descending |
         Select-Object -First 1
-
 
     # Get the article's content
     Write-Verbose "Found article: KB$( $kbId.articleId ), $( $kbId.Uri )"
@@ -117,7 +110,6 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
         Where-Object { $_.OuterHTML -match ($Filter -join '.*') } |
         ForEach-Object { $_.Id.Replace('_link','') } |
         Where-Object { $_ -in $elementIDs }
-
 
 
     # Get direct download links for all GUIDs of assets and
