@@ -79,42 +79,54 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
         $Filter = @( "Cumulative", "x64" )
     )
 
-    # download JSON with updates
-    Write-Verbose "Downloading $( $script:startKB ) to retrieve the list of updates"
-    $updates = Get-UpdateJson $script:startKB
+    Begin {
+        # link to JSON with the list of KB articles with updates
+        $startKBarticle = 'https://support.microsoft.com/app/content/api/content/asset/en-us/4000816'
 
+        # Endpoint for searching article by its ID
+        $updateCatalogSearchLink =   'http://www.catalog.update.microsoft.com/Search.aspx?q=KB{0}'
 
-    # Get list of all articles related to the requested build
-    $articles = Find-KBArticleWithUpdate -source $updates -build $Build -verbose
+        # Convert plain text filter words to regex
+        # Regex matches only if all filter words are in the text
+        $regexFilter = (
+            $Filter |
+                ForEach-Object {
+                    "(?=.*\b$_\b)"
+                }
+        ) -join ''
 
+    }
 
-    # Extract urls from the list of Article objects and select the latest one
-    $kbId = Find-ArticleUri -article $articles |
-        Sort-Object -Property Version -Descending |
-        Select-Object -First 1
+    Process {
+        # download JSON with updates
+        $updates = ( (Invoke-WebRequest -Uri $startKBarticle).Content |
+            ConvertFrom-Json
+        ).Links
 
-    # Get the article's content
-    Write-Verbose "Found article: KB$( $kbId.articleId ), $( $kbId.Uri )"
-    $kbContent = Invoke-WebRequest -Uri $kbId.Uri
+        # filter updates related to specific Build and sort them by version number
+        $articleID = $updates |
+            Select-Object articleId, Text |
+            Where-Object Text -like "* (OS Build* $Build.*)" |
+            Select-Object *,
+                @{  Name = 'Version'
+                    Expression = { ($_.Text -replace '(?x) ^.* Builds? \s+ ([.0-9]+) .* $', '$1') -as [Version] }
+                } |
+            Sort-Object Version |
+            Select-Object -Last 1 -ExpandProperty articleId
+        $articleUri = $updateCatalogSearchLink -f $articleId
 
+        Write-Verbose "Found article: KB$articleId / $articleUri"
 
-    # Get html element IDs of buttons labeled as 'Download'
-    $elementIDs = $kbContent.InputFields |
-        Where-Object { $_.Type -eq 'Button' -and $_.Value -eq 'Download' } |
-        Select-Object -ExpandProperty ID
+        # Find GUIDs of all assets which match filter words
+        $updateGUIDs = (Invoke-WebRequest -Uri $articleUri).Links |
+            Where-Object innerText -match $regexFilter |
+            ForEach-Object { $_.Id.replace('_link', '') }
 
+        # Get direct download links for all GUIDs of assets and
+        $updateGUIDs |
+            Find-AssetUri |
+            Select-Object -Unique
+    }
 
-    # Get GUIDs of assets which match all patterns in $Filter argument
-    $kbGUIDs = $kbContent.Links |
-        Where-Object ID -match '_link' |
-        Where-Object { $_.OuterHTML -match ($Filter -join '.*') } |
-        ForEach-Object { $_.Id.Replace('_link','') } |
-        Where-Object { $_ -in $elementIDs }
-
-
-    # Get direct download links for all GUIDs of assets and
-    $kbGUIDs |
-        Find-AssetUri |
-        Select-Object -Unique
-
+    End {}
 }

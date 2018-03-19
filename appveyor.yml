@@ -8,6 +8,6 @@ os: WMF 5
 # version: 1.0.{build}
 build: false
 
-#Kick off the CI/CD pipeline
+# Kick off the CI/CD pipeline
 test_script:
 - ps: . .\build\build.ps1 -Task Deploy
