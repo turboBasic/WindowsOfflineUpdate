@@ -1,7 +1,7 @@
 $projectRoot = Resolve-Path $PSScriptRoot\..
 $moduleRoot = Split-Path (Resolve-Path $projectRoot\*\*.psm1)
 $moduleName = Split-Path $moduleRoot -Leaf
-
+$projectRoot, $moduleRoot, $moduleName | Write-Host
 
 Describe "General project validation: $moduleName" {
 
@@ -26,34 +26,41 @@ Describe "General project validation: $moduleName" {
     }
 }
 
-
-Describe "Validation of update metadata" {
-
+Describe "Validate update metadata" {
     InModuleScope $moduleName {
-        $updates = Get-UpdateJson $startKB
-
-        It "Update links should be available" {
-            $updates | ConvertFrom-Json | Should -Not -BeNullOrEmpty
+        It "Metadata not empty" {
+            (Find-UpdateMetadata).articleId | Should -Not -BeNullOrEmpty
         }
 
-        $articles = Find-KBArticleWithUpdate -source $updates -build '16299'
-        $kbId = Find-ArticleUri -article $articles |
-            Sort-Object -Property Version -Descending |
-            Select-Object -First 1
-
-        $kbContent = Invoke-WebRequest -Uri $kbId.Uri
-        Write-Host $kbId.Uri
-
-        $elementIDs = $kbContent.InputFields |
-        Where-Object { $_.Type -eq 'Button' -and $_.Value -eq 'Download' } |
-        Select-Object -ExpandProperty ID
-
-        It "Article should contain Download buttons" {
-            $kbContent.InputFields |
-            Where-Object { $_.Type -eq 'Button' -and $_.Value -eq 'Download' } |
-            Measure-Object |
-            Select-Object -ExpandProperty Count | Should -BeGreaterThan 1
+        It "Finds update articles for all builds" {
+            10240, 10586, 14393, 15063, 16299 |
+                ForEach-Object {
+                    $currentVersion = $_
+                    Find-UpdateMetadata |
+                        Where-Object { $_.Version.Major -eq $currentVersion } |
+                        Should -Not -BeNullOrEmpty
+                }
         }
     }
-
 }
+
+
+Describe "Validate article IDs" {
+    InModuleScope $moduleName {
+        Mock Find-AssetGuid {}
+
+        10240, 10586, 14393, 15063, 16299 |
+            ForEach-Object {
+                $currentVersion = $_
+                Find-UpdateMetadata |
+                    Where-Object { $_.Version.Major -eq $currentVersion } |
+                    Select-Object -First 1 -ExpandProperty articleId |
+                    Find-AssetGuid
+            }
+
+        It "Finds asset GUIDs for all builds" {
+            Assert-MockCalled Find-AssetGuid -times 5
+        }
+    }
+}
+

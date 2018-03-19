@@ -80,9 +80,6 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
     )
 
     Begin {
-        # link to JSON with the list of KB articles with updates
-        $startKBarticle = 'https://support.microsoft.com/app/content/api/content/asset/en-us/4000816'
-
         # Endpoint for searching article by its ID
         $updateCatalogSearchLink =   'http://www.catalog.update.microsoft.com/Search.aspx?q=KB{0}'
 
@@ -98,29 +95,22 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
     }
 
     Process {
-        # download JSON with updates
-        $updates = ( (Invoke-WebRequest -Uri $startKBarticle).Content |
-            ConvertFrom-Json
-        ).Links
 
-        # filter updates related to specific Build and sort them by version number
-        $articleID = $updates |
-            Select-Object articleId, Text |
+        # Find Uri of KB article for the latest update for selected build
+        $articleId = Find-UpdateMetadata |
             Where-Object Text -like "* (OS Build* $Build.*)" |
-            Select-Object *,
-                @{  Name = 'Version'
-                    Expression = { ($_.Text -replace '(?x) ^.* Builds? \s+ ([.0-9]+) .* $', '$1') -as [Version] }
-                } |
-            Sort-Object Version |
             Select-Object -Last 1 -ExpandProperty articleId
         $articleUri = $updateCatalogSearchLink -f $articleId
-
         Write-Verbose "Found article: KB$articleId / $articleUri"
 
+
         # Find GUIDs of all assets which match filter words
+        $updateGUIDs = Find-AssetGuid -article $articleId
+
         $updateGUIDs = (Invoke-WebRequest -Uri $articleUri).Links |
             Where-Object innerText -match $regexFilter |
             ForEach-Object { $_.Id.replace('_link', '') }
+
 
         # Get direct download links for all GUIDs of assets and
         $updateGUIDs |
