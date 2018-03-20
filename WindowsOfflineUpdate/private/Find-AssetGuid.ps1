@@ -18,11 +18,13 @@ function Find-AssetGuid {
 
         (Invoke-WebRequest -Uri $articleUri).Links |
             Where-Object id -like '*_link' |
-            Select-Object id, class, innerText, href |
-            ForEach-Object {
-                $_.Id = $_.Id -replace '_link', ''
-                $_
-            }
+            Select-Object @{
+                    Name = 'id'
+                    Expression = { $_.Id -replace '_link', '' }
+                },
+                class,
+                innerText,
+                href
     }
 
     End {}

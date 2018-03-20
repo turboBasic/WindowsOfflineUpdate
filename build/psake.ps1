@@ -89,13 +89,18 @@ Task Build -Depends Test {
 }
 
 
-Task Deploy -Depends Build {
+Task Zip -Depends Build {
+    7z a "$env:BHProjectName-$env:APPVEYOR_BUILD_VERSION.zip" $env:BHProjectName
+}
+
+
+Task Deploy -Depends Build, Zip {
     $lines
 
     $Params = @{
         Path = "$ProjectRoot\Build"
         Force = $true
-        Recurse = $false # We keep psdeploy artifacts, avoid deploying those : )
+        Recurse = $false                # We keep psDeploy artifacts, avoid deploying those : )
     }
     Invoke-PSDeploy @Verbose @Params
 }

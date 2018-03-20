@@ -1,3 +1,6 @@
+image:
+- Visual Studio 2017
+
 environment:
   NugetApiKey:
     secure: Gxlox4/BGS+/9rX7ZRqAuA5bRzVFjYTKuyU8jpBbA5yfIzprQbzxZoAdhZxppRZ4
@@ -7,6 +10,15 @@ os: WMF 5
 
 # version: 1.0.{build}
 build: false
+
+artifacts:
+  path: $(BHProjectName)-$(APPVEYOR_BUILD_VERSION).zip
+
+deploy:
+  provider: GitHub
+  artifact: /$(BHProjectName)-$(APPVEYOR_BUILD_VERSION).zip/
+  draft: false
+  prerelease: false
 
 # Kick off the CI/CD pipeline
 test_script:
