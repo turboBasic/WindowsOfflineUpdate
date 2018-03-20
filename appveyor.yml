@@ -4,6 +4,8 @@ image:
 environment:
   NugetApiKey:
     secure: Gxlox4/BGS+/9rX7ZRqAuA5bRzVFjYTKuyU8jpBbA5yfIzprQbzxZoAdhZxppRZ4
+  GithubApiKey:
+    secure: 2Lyii63Fi8aSnNDcC0cQaR11wrlpcpcs7/3+YBIdYupzpJRiD2F1gzJEJbgdrCLb
 
 # Allow WMF5 (i.e. PowerShellGallery functionality)
 os: WMF 5
@@ -16,6 +18,8 @@ artifacts:
 
 deploy:
   provider: GitHub
+  auth_token: $(GithubApiKey)
+  description: $(BHProjectName) release v$(APPVEYOR_BUILD_VERSION)
   artifact: /$(BHProjectName)-$(APPVEYOR_BUILD_VERSION).zip/
   draft: false
   prerelease: false
