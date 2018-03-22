@@ -1,0 +1,6 @@
+id                                   platform class innerText                                                                                   href
+--                                   -------- ----- ---------                                                                                   ----
+2c72e703-9c4c-4146-9e32-cc4386b2cfb2                2018-03 Cumulative Update for Windows 10 Version 1709 for x64-based Systems (KB4088776)     javascript:void(0);
+fdb9fcbc-3d11-45cc-a6a7-9ef8afac974e                2018-03 Cumulative Update for Windows 10 Version 1709 for ARM64-based Systems (KB4088776)   javascript:void(0);
+3b3e0295-642a-4b7d-84b7-c6b5e83f5ca2                2018-03 Cumulative Update for Windows Server 2016 (1709) for x64-based Systems (KB4088776)  javascript:void(0);
+786afab9-c31a-475e-8a16-67957d2e609d                2018-03 Cumulative Update for Windows 10 Version 1709 for x86-based Systems (KB4088776)     javascript:void(0);

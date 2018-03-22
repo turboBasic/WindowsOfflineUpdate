@@ -11,19 +11,18 @@ function Find-UpdateMetadata {
     }
 
     Process {
-        ( (Invoke-WebRequest -Uri $startKBarticle).Content |
+        (   (Invoke-WebRequest -Uri $startKBarticle).Content |
             ConvertFrom-Json
         ).Links |
-            Select-Object `
-                articleId,
-                Text,
-                @{  Name = 'Version'
-                    Expression = {
-                        ($_.Text -replace '(?x) ^.* Builds? \s+ ([.0-9]+) .* $', '$1') -as [Version]
-                }
-            } |
-            Where-Object Version |
-            Sort-Object Version
+        Select-Object `
+            articleId,
+            Text,
+            @{  Name = 'Version'
+                Expression = {
+                    ($_.Text -replace '(?x) ^.* Builds? \s+ ([.0-9]+) .* $', '$1') -as [Version]
+            }
+        } |
+        Where-Object Version
     }
 
     End {}

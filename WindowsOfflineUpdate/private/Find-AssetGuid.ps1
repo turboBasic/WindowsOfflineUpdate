@@ -1,30 +1,51 @@
 function Find-AssetGuid {
     <#
-        Find GUIDs of all asset types for selected Build update
+        Find GUIDs of all asset types for KB article specified by its Uri
     #>
-        [CmdletBinding()]
+
+    [CmdletBinding()]
         Param(
-            [Parameter( Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName )]
-            [String] $article
+            [Parameter(
+                HelpMessage = 'Microsoft KnowledgeBase article Uri.',
+                Mandatory,
+                Position = 0,
+                ValueFromPipeline,
+                ValueFromPipelineByPropertyName
+            )]
+            [Alias( 'Uri' )]
+            [String[]] $articleUri
         )
 
-    Begin {
-        # Endpoint for searching article by its ID
-        $updateCatalogSearchLink =   'http://www.catalog.update.microsoft.com/Search.aspx?q=KB{0}'
-    }
+    Begin {}
 
     Process {
-        $articleUri = $updateCatalogSearchLink -f $article
-
-        (Invoke-WebRequest -Uri $articleUri).Links |
+        foreach ($oneUri in $articleUri) {
+            (Invoke-WebRequest -Uri $oneUri).Links |
             Where-Object id -like '*_link' |
             Select-Object @{
-                    Name = 'id'
+                    Name = 'GUID'
                     Expression = { $_.Id -replace '_link', '' }
+                },
+                @{
+                    Name = 'platform'
+                    Expression = {
+                        if( $_.innerText -match '\b(x86|x64|arm64)\b' ) {
+                            $Matches[1].ToLower()
+                        }
+                    }
+                },
+                @{
+                    Name = 'type'
+                    Expression = {
+                        if( $_.innerText -match '\b(Cumulative|Delta)\b' ) {
+                            $Matches[1].ToLower()
+                        }
+                    }
                 },
                 class,
                 innerText,
                 href
+        }
     }
 
     End {}

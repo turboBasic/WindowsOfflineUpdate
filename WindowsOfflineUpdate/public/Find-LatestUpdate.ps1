@@ -6,11 +6,11 @@ Finds the latest delta or cumulative update for Windows or Windows Server operat
 
 
     .DESCRIPTION
-This script will return the list of Cumulative updates for Windows 10 and Windows Server 2016 from the Microsoft Update Catalog.
+This script will return the list of links to updates for Windows 10 and Windows Server 2016 from the Microsoft Update Catalog.
 
 
     .PARAMETER Build
-Windows 10 Build Number used to filter avaible Downloads
+Windows 10 Build Number used to filter available Downloads
 
     10240 - Windows 10 Version 1507
     10586 - Windows 10 Version 1511
@@ -19,15 +19,19 @@ Windows 10 Build Number used to filter avaible Downloads
     16299 - WIndows 10 Version 1709
 
 
-    .PARAMETER Filter
-Search filter for updates. The default filter will find Cumulative updates for x86 and x64 platforms.
+    .PARAMETER Platform
+Windows hardware platform to select updates for.  Parameter can take the following values:
 
-If multiple strings are specified, only update that match *ALL* strings will be found.
+    x64         (default value)
+    x86
+    arm64
 
-    Cumulative: find only Cumulative updates
-    Delta:  find only Delta updates
-    x86:    find only updates for x86 platform
-    x64:    find only updates for x64 platform
+
+    .PARAMETER Type
+Update type. Parameter can take the following values:
+
+    Cumulative  (dafault)
+    Delta
 
 
     .NOTES
@@ -62,48 +66,57 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
 
     Find-LatestUpdate | %{ Start-BitsTransfer -Source $_ -Destination $ENV:Temp }
 
+
+    .EXAMPLE
+Get the latest cumulative update for x64 platform
+    Find-LatestUpdate -build 16299 | ? { ($_.Platform -eq x64) -and ($_.Type -eq Cumulative) }
+
 #>
 
     [CmdletBinding()]
     Param(
         [String]
-            [Parameter( HelpMessage = "Windows build number." )]
+            [Parameter(
+                HelpMessage = "Windows build number.",
+                Position = 0
+            )]
             [ValidateSet( '16299', '15063', '14393', '10586', '10240' )]
         $Build = '16299',
 
-        [String[]]
-            [Parameter( HelpMessage = "Windows update Catalog Search Filter." )]
-            [ValidateSet( 'x64', 'x86', 'Cumulative', 'Delta', $null )]
-        $Filter = @( "Cumulative", "x64" )
+        [String]
+            [Parameter(
+                HelpMessage = "Hardware platform.",
+                Position = 1
+            )]
+            [ValidateSet( 'x64', 'x86', 'arm64' )]
+        $Platform = 'x64',
+
+        [String]
+            [Parameter(
+                HelpMessage = "Update type (Cumulative or Delta).",
+                Position = 2
+            )]
+            [ValidateSet( 'Cumulative', 'Delta' )]
+        $Type = 'Cumulative'
     )
 
-    Begin {
-        # Convert plain text filter words to regex
-        # Regex matches only if all filter words are in the text
-        $regexFilter = (
-            $Filter |
-                ForEach-Object {
-                    "(?=.*\b$_\b)"
-                }
-        ) -join ''
-    }
+    Begin {}
 
     Process {
-        # Find Uri of KB article for the latest update for selected build
-        $articleId = Find-UpdateMetadata |
-            Where-Object Text -like "* (OS Build* $Build.*)" |
-            Select-Object -Last 1 -ExpandProperty articleId
-        $articleUri = $updateCatalogSearchLink -f $articleId
-        Write-Verbose "Found article: KB$articleId / $articleUri"
+        # Find KB article for the latest update for selected build
+        $article = Find-UpdateMetadata |
+            Where-Object { $_.Version.Major -eq $Build } |
+            Sort-Object Version |
+            Select-Object -Last 1
+        Write-Verbose "Found article: KB$( $article.articleId )"
 
-
-        # Find GUIDs of all assets which match filter words
-        $updateGUIDs = ( Find-AssetGuid -article $articleId |
-            Where-Object innerText -match $regexFilter
-        ).Id
-
-        # Get direct download links for all GUIDs of assets and
-        $updateGUIDs |
+        $article |
+            Find-ArticleUri |
+            Find-AssetGuid |
+            Where-Object {
+                ($_.Platform -eq $Platform) -and
+                ($_.Type -eq $Type)
+            } |
             Find-AssetUri |
             Select-Object -Unique
     }

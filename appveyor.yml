@@ -16,13 +16,13 @@ build: false
 artifacts:
   path: $(BHProjectName)-$(APPVEYOR_BUILD_VERSION).zip
 
-deploy:
-  provider: GitHub
-  auth_token: $(GithubApiKey)
-  description: $(BHProjectName) release v$(APPVEYOR_BUILD_VERSION)
-  artifact: /$(BHProjectName)-$(APPVEYOR_BUILD_VERSION).zip/
-  draft: false
-  prerelease: false
+#deploy:
+#  provider: GitHub
+#  auth_token: $(GithubApiKey)
+#  description: $(BHProjectName) release v$(APPVEYOR_BUILD_VERSION)
+#  artifact: /$(BHProjectName)-$(APPVEYOR_BUILD_VERSION).zip/
+#  draft: false
+#  prerelease: false
 
 # Kick off the CI/CD pipeline
 test_script:

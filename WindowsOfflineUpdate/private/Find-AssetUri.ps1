@@ -1,35 +1,40 @@
 function Find-AssetUri {
 <#
-    Get uri of Microsoft download asset specified by its GUID
+    Get Uri of Microsoft download asset specified by its GUID
 #>
     [CmdletBinding()]
     Param(
-        [String]
+        [String[]]
             [Parameter(
                 Mandatory,
+                Position = 0,
                 ValueFromPipeline,
+                ValueFromPipelineByPropertyName,
                 HelpMessage = "GUID of Microsoft download asset."
             )]
+            [Alias( 'Id' )]
         $GUID
     )
 
-    BEGIN {
+    Begin {
         $updateCatalogDownloadLink = 'http://www.catalog.update.microsoft.com/DownloadDialog.aspx'
 
         $assetUriPattern =  "https?://download\.windowsupdate\.com\/[^ \'\""]+"
         $postBodyTemplate = '"size": 0,  "uidInfo": "{0}",  "updateID": "{0}"' -replace ' ', ''
     }
 
-    PROCESS {
-        $postBody = @{ updateIDs = "[{$( $postBodyTemplate -f $GUID )}]" }
+    Process {
+        foreach ($oneGUID in $GUID) {
+            Write-Verbose "Download description of asset $oneGUID"
+            $postBody = @{ updateIDs = "[{$( $postBodyTemplate -f $oneGUID )}]" }
 
-        Write-Verbose "Download description of asset $GUID"
-        if ( ( Invoke-WebRequest -Uri $updateCatalogDownloadLink -Method Post -Body $postBody
-             ).Content -match $assetUriPattern
-        ) {
-            $Matches[0]
+            if (    ( Invoke-WebRequest -Uri $updateCatalogDownloadLink -Method Post -Body $postBody
+                    ).Content -match $assetUriPattern
+            ) {
+                $Matches[0]
+            }
         }
     }
 
-    END {}
+    End {}
 }

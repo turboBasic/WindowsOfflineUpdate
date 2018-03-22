@@ -1,0 +1,1366 @@
+{
+  "Links": [
+    {
+      "Id": 98,
+      "Text": "Windows 10 version 1709",
+      "Link": "https://",
+      "Level": 1,
+      "ArticleId": "4043454",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 144,
+      "Text": "KB4088776 (OS Build 16299.309)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4088776",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 147,
+      "Text": "KB4090912 (OS Build 15254.313)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4090912",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 140,
+      "Text": "KB4090913 (OS Build 16299.251)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4090913",
+      "ArticleType": "article",
+      "OpenInNewTab": true
+    },
+    {
+      "Id": 133,
+      "Text": "KB4074588 (OS Build 16299.248)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4074588",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 134,
+      "Text": "KB4077675 (OS Build 15254.248)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4077675",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 130,
+      "Text": "KB4058258 (OS Build 16299.214)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4058258",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 129,
+      "Text": "KB4073291 (OS Build 16299.201)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4073291",
+      "ArticleType": "article",
+      "OpenInNewTab": true
+    },
+    {
+      "Id": 119,
+      "Text": "KB4056892 (OS Build 16299.192)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4056892",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 120,
+      "Text": "KB4073117 (OS Build 15254.158)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4073117",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 117,
+      "Text": "KB4054517 (OS Build 16299.125)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4054517",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 118,
+      "Text": "KB4056342 (OS Build 15254.124)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4056342",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 112,
+      "Text": "KB4051963 (OS Build 16299.98)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4051963",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 107,
+      "Text": "KB4048955 (OS Build 16299.64)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4048955",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 108,
+      "Text": "KB4052314 (OS Build 15254.12)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4052314",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 99,
+      "Text": "KB4043961 (OS Build 16299.19)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4043961",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 54,
+      "Text": "Windows 10 version 1703",
+      "Link": "https://",
+      "Level": 1,
+      "ArticleId": "4018124",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 143,
+      "Text": "KB4088782 (OS Build 15063.966 and 15063.968)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4088782",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 141,
+      "Text": "KB4092077 (OS Build 15063.936)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4092077",
+      "ArticleType": "article",
+      "OpenInNewTab": true
+    },
+    {
+      "Id": 139,
+      "Text": "KB4077528 (OS Build 15063.936)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4077528",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 135,
+      "Text": "KB4074592 (OS Build 15063.909)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4074592",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 127,
+      "Text": "KB4057144 (OS Build 15063.877)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4057144",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 121,
+      "Text": "KB4056891 (OS Build 15063.850)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4056891",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 115,
+      "Text": "KB4053580 (OS Build 15063.786)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4053580",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 111,
+      "Text": "KB4055254 (OS Build 15063.729)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4055254",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 106,
+      "Text": "KB4048954 (OS Build 15063.726 and 15063.728)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4048954",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 101,
+      "Text": "KB4049370 (OS Build 15063.675)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4049370",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 94,
+      "Text": "KB4041676 (OS Build 15063.674)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4041676",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 93,
+      "Text": "KB4040724 (OS Build 15063.632)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4040724",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 88,
+      "Text": "KB4038788 (OS Build 15063.608)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4038788",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 84,
+      "Text": "KB4034674 (OS Build 15063.540)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4034674",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 80,
+      "Text": "KB4032188 (OS Build 15063.502)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4032188",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 76,
+      "Text": "KB4025342 (OS Build 15063.483)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4025342",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 71,
+      "Text": "KB4022716 (OS Build 15063.447)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4022716",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 70,
+      "Text": "KB4022725 (OS Build 15063.413 and 15063.414)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4022725",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 65,
+      "Text": "KB4020102 (OS Build 15063.332)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4020102",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 64,
+      "Text": "KB4016871 (OS Build 15063.296 and 15063.297)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4016871",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 60,
+      "Text": "KB4016240 (OS Build 15063.250)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4016240",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 58,
+      "Text": "KB4015583 (OS Build 15063.138)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4015583",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 56,
+      "Text": "KB4016251 (OS Build 15063.13)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4016251",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 2,
+      "Text": "Windows 10 version 1607 and Windows Server 2016",
+      "Link": "https://",
+      "Level": 1,
+      "ArticleId": "4000825",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 142,
+      "Text": "KB4088787 (OS Build 14393.2125 and 14393.2126)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4088787",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 132,
+      "Text": "KB4077525 (OS Build 14393.2097)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4077525",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 136,
+      "Text": "KB4074590 (OS Build 14393.2068)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4074590",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 126,
+      "Text": "KB4057142 (OS Build 14393.2034)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4057142",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 122,
+      "Text": "KB4056890 (OS Build 14393.2007)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4056890",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 114,
+      "Text": "KB4053579 (OS Build 14393.1944)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4053579",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 110,
+      "Text": "KB4051033 (OS Build 14393.1914)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4051033",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 105,
+      "Text": "KB4048953 (OS Build 14393.1884)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4048953",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 102,
+      "Text": "KB4052231 (OS Build 14393.1797)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4052231",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 100,
+      "Text": "KB4041688 (OS Build 14393.1794)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4041688",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 97,
+      "Text": "KB4041691 (OS Build 14393.1770)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4041691",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 92,
+      "Text": "KB4038801 (OS Build 14393.1737)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4038801",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 89,
+      "Text": "KB4038782 (OS Build 14393.1715)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4038782",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 86,
+      "Text": "KB4039396 (OS Build 14393.1670)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4039396",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 85,
+      "Text": "KB4034661 (OS Build 14393.1613)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4034661",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 82,
+      "Text": "KB4034658 (OS Build 14393.1593)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4034658",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 87,
+      "Text": "KB4038220 (OS Build 14393.1537)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4038220",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 79,
+      "Text": "KB4025334 (OS Build 14393.1532)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4025334",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 77,
+      "Text": "KB4025339 (OS Build 14393.1480)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4025339",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 72,
+      "Text": "KB4022723 (OS Build 14393.1378)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4022723",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 67,
+      "Text": "KB4022715 (OS Build 14393.1358)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4022715",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 66,
+      "Text": "KB4023680 (OS Build 14393.1230)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4023680",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 62,
+      "Text": "KB4019472 (OS Build 14393.1198)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4019472",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 59,
+      "Text": "KB4015217 (OS Build 14393.1066 and 14393.1083)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4015217",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 51,
+      "Text": "KB4016635 (OS Build 14393.970)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4016635",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 50,
+      "Text": "KB4015438 (OS Build 14393.969)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4015438",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 49,
+      "Text": "KB4013429 (OS Build 14393.953)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4013429",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 46,
+      "Text": "KB4010672 (OS Build 14393.729)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4010672",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 44,
+      "Text": "KB3216755 (OS Build 14393.726)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4011347",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 26,
+      "Text": "KB3213986 (OS Build 14393.693)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4009938",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 1,
+      "Text": "KB3206632 (OS Build 14393.576)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4004227",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 22,
+      "Text": "KB3201845 (OS Build 14393.479)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4004253",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 3,
+      "Text": "KB3200970 (OS Build 14393.448)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001886",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 5,
+      "Text": "KB3200970 (OS Build 14393.447)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001885",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 7,
+      "Text": "KB3197954 (OS Build 14393.351)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001753",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 8,
+      "Text": "KB3194798 (OS Build 14393.321)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001754",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 23,
+      "Text": "KB3194496 (OS Builds 14393.222)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001755",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 24,
+      "Text": "KB3193494 (OS Builds 14393.187 and 14393.189)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001756",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 25,
+      "Text": "KB3189866 (OS Builds 14393.187 and 14393.189)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001757",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 19,
+      "Text": "KB3176938 (OS Build 14393.105)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001758",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 27,
+      "Text": "KB3176934 (OS Build 14393.82)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001759",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 28,
+      "Text": "KB3176495 (OS Build 14393.51)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001760",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 29,
+      "Text": "KB3176929 (OS Build 14393.10)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001761",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 6,
+      "Text": "Windows 10 version 1511",
+      "Link": "https://",
+      "Level": 1,
+      "ArticleId": "4000824",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 146,
+      "Text": "KB4088779 (OS Build 10586.1478)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4088779",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 137,
+      "Text": "KB4074591 (OS Build 10586.1417)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4074591",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 125,
+      "Text": "KB4075200 (OS Build 10586.1358)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4075200",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 124,
+      "Text": "KB4056888 (OS Build 10586.1356)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4056888",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 113,
+      "Text": "KB4053578 (OS Build 10586.1295)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4053578",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 104,
+      "Text": "KB4048952 (OS Build 10586.1232)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4048952",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 103,
+      "Text": "KB4052232 (OS Build 10586.1177)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4052232",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 95,
+      "Text": "KB4041689 (OS Build 10586.1176)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4041689",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 91,
+      "Text": "KB4038783 (OS Build 10586.1106)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4038783",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 81,
+      "Text": "KB4034660 (OS Build 10586.1045)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4034660",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 78,
+      "Text": "KB4025344 (OS Build 10586.1007)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4025344",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 73,
+      "Text": "KB4032693 (OS Build 10586.965)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4032693",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 68,
+      "Text": "KB4022714 (OS Build 10586.962)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4022714",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 61,
+      "Text": "KB4019473 (OS Build 10586.916)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4019473",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 57,
+      "Text": "KB4015219 (OS Build 10586.873)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4015219",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 52,
+      "Text": "KB4016636 (OS Build 10586.842)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4016636",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 48,
+      "Text": "KB4013198 (OS Build 10586.839)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4013198",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 33,
+      "Text": "KB3210721 (OS Build 10586.753)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4009939",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 4,
+      "Text": "KB3205386 (OS Build 10586.713)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4004229",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 45,
+      "Text": "KB3198586 (OS Build 10586.682)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001884",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 43,
+      "Text": "KB3198586 (OS Build 10586.679)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001883",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 37,
+      "Text": "KB3192441 (OS Build 10586.633)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001762",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 30,
+      "Text": "KB3185614 (OS Build 10586.589)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001763",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 31,
+      "Text": "KB3176493 (OS Build 10586.545)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001764",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 32,
+      "Text": "KB3172985 (OS Build 10586.494)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001765",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 34,
+      "Text": "KB3163018 (OS Build 10586.420)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001766",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 36,
+      "Text": "KB3156421 (OS Build 10586.318)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001767",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 38,
+      "Text": "KB3147458 (OS Build 10586.218)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001768",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 39,
+      "Text": "KB3140768 (OS Build 10586.164)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001769",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 40,
+      "Text": "KB3140743 (OS Build 10586.122)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001770",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 41,
+      "Text": "KB3135173 (OS Build 10586.104)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001771",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 9,
+      "Text": "Windows 10 (initial version released July 2015)",
+      "Link": "https://",
+      "Level": 1,
+      "ArticleId": "4000823",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 145,
+      "Text": "KB4088786 (OS Build 10240.17797)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4088786",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 138,
+      "Text": "KB4074596 (OS Build 10240.17770)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4074596",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 131,
+      "Text": "KB4077735 (OS Build 10240.17741)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4077735",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 128,
+      "Text": "KB4075199 (OS Build 10240.17741)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4075199",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 123,
+      "Text": "KB4056893 (OS Build 10240.17738)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4056893",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 116,
+      "Text": "KB4053581 (OS Build 10240.17709)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4053581",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 109,
+      "Text": "KB4048956 (OS Build 10240.17673)",
+      "Link": null,
+      "Level": 2,
+      "ArticleId": "4048956",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 96,
+      "Text": "KB4042895 (OS Build 10240.17643)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4042895",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 90,
+      "Text": "KB4038781 (OS Build 10240.17609)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4038781",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 83,
+      "Text": "KB4034668 (OS Build 10240.17533)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4034668",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 75,
+      "Text": "KB4025338 (OS Build 10240.17488)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4025338",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 74,
+      "Text": "KB4032695 (OS Build 10240.17446)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4032695",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 69,
+      "Text": "KB4022727 (OS Build 10240.17443)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4022727",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 63,
+      "Text": "KB4019474 (OS Build 10240.17394)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4019474",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 55,
+      "Text": "KB4015221 (OS Build 10240.17354)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4015221",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 53,
+      "Text": "KB4016637 (OS Build 10240.17320)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4016637",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 47,
+      "Text": "KB4012606 (OS Build 10240.17319)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4012606",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 35,
+      "Text": "KB3210720 (OS Build 10240.17236)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4009941",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 15,
+      "Text": "KB3205383 (OS Build 10240.17202)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4004230",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 42,
+      "Text": "KB3198585 (OS Build 10240.17190)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001882",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 11,
+      "Text": "KB3192440 (OS Build 10240.17146)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001772",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 10,
+      "Text": "KB3193821 (OS Build 10240.17113)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001773",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 12,
+      "Text": "KB3185611 (OS Build 10240.17113)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001774",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 13,
+      "Text": "KB3176492 (OS Build 10240.17071)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001775",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 14,
+      "Text": "KB3163912 (OS Build 10240.17024)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001776",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 16,
+      "Text": "KB3163017 (OS Build 10240.16942)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001777",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 17,
+      "Text": "KB3156387 (OS Build 10240.16854)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001778",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 18,
+      "Text": "KB3147461 (OS Build 10240.16769)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001779",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 20,
+      "Text": "KB3140745 (OS Build 10240.16725)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001780",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    },
+    {
+      "Id": 21,
+      "Text": "KB3135174 (OS Build 10240.16683)",
+      "Link": "https://",
+      "Level": 2,
+      "ArticleId": "4001781",
+      "ArticleType": "article",
+      "OpenInNewTab": null
+    }
+  ],
+  "FileUrl": null,
+  "Width": 0,
+  "Height": 0,
+  "Details": {
+    "Type": "asset",
+    "AssetType": "sideNav",
+    "Id": "4000816",
+    "Locale": "en",
+    "Team": "Windows Update",
+    "Title": "windows-10-update-history-side-nav",
+    "TitleLower": "windows-10-update-history-side-nav",
+    "Published": true,
+    "OriginalOn": null,
+    "OriginalBy": null,
+    "CreatedOn": "2018-03-21T20:25:11.5392564Z",
+    "CreatedBy": null,
+    "PublishedOn": "2018-03-21T20:25:35.0241488Z",
+    "PublishedBy": null,
+    "UnPublishedOn": null,
+    "UnPublishedBy": null,
+    "Version": 275,
+    "EolProject": null,
+    "IsInternalContent": null,
+    "IsMachineTranslated": false,
+    "DocumentState": null,
+    "Archived": null,
+    "Status": null,
+    "ContentOwner": null,
+    "AssignedTo": null,
+    "SubjectToDisclosure": null,
+    "Tags": null,
+    "TagsLower": null
+  },
+  "AssetReferences": null,
+  "id": null,
+  "_rid": null,
+  "_self": null,
+  "_ts": 0,
+  "_etag": null
+}

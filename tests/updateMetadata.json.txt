@@ -1,0 +1,149 @@
+ Id Text                                            Link     Level ArticleId ArticleType OpenInNewTab
+ -- ----                                            ----     ----- --------- ----------- ------------
+ 98 Windows 10 version 1709                         https://     1 4043454   article
+144 KB4088776 (OS Build 16299.309)                               2 4088776   article
+147 KB4090912 (OS Build 15254.313)                               2 4090912   article
+140 KB4090913 (OS Build 16299.251)                               2 4090913   article     True
+133 KB4074588 (OS Build 16299.248)                               2 4074588   article
+134 KB4077675 (OS Build 15254.248)                               2 4077675   article
+130 KB4058258 (OS Build 16299.214)                               2 4058258   article
+129 KB4073291 (OS Build 16299.201)                               2 4073291   article     True
+119 KB4056892 (OS Build 16299.192)                               2 4056892   article
+120 KB4073117 (OS Build 15254.158)                               2 4073117   article
+117 KB4054517 (OS Build 16299.125)                               2 4054517   article
+118 KB4056342 (OS Build 15254.124)                               2 4056342   article
+112 KB4051963 (OS Build 16299.98)                                2 4051963   article
+107 KB4048955 (OS Build 16299.64)                                2 4048955   article
+108 KB4052314 (OS Build 15254.12)                                2 4052314   article
+ 99 KB4043961 (OS Build 16299.19)                   https://     2 4043961   article
+ 54 Windows 10 version 1703                         https://     1 4018124   article
+143 KB4088782 (OS Build 15063.966 and 15063.968)                 2 4088782   article
+141 KB4092077 (OS Build 15063.936)                               2 4092077   article     True
+139 KB4077528 (OS Build 15063.936)                               2 4077528   article
+135 KB4074592 (OS Build 15063.909)                               2 4074592   article
+127 KB4057144 (OS Build 15063.877)                               2 4057144   article
+121 KB4056891 (OS Build 15063.850)                               2 4056891   article
+115 KB4053580 (OS Build 15063.786)                               2 4053580   article
+111 KB4055254 (OS Build 15063.729)                               2 4055254   article
+106 KB4048954 (OS Build 15063.726 and 15063.728)                 2 4048954   article
+101 KB4049370 (OS Build 15063.675)                               2 4049370   article
+ 94 KB4041676 (OS Build 15063.674)                  https://     2 4041676   article
+ 93 KB4040724 (OS Build 15063.632)                  https://     2 4040724   article
+ 88 KB4038788 (OS Build 15063.608)                  https://     2 4038788   article
+ 84 KB4034674 (OS Build 15063.540)                  https://     2 4034674   article
+ 80 KB4032188 (OS Build 15063.502)                  https://     2 4032188   article
+ 76 KB4025342 (OS Build 15063.483)                  https://     2 4025342   article
+ 71 KB4022716 (OS Build 15063.447)                  https://     2 4022716   article
+ 70 KB4022725 (OS Build 15063.413 and 15063.414)    https://     2 4022725   article
+ 65 KB4020102 (OS Build 15063.332)                  https://     2 4020102   article
+ 64 KB4016871 (OS Build 15063.296 and 15063.297)    https://     2 4016871   article
+ 60 KB4016240 (OS Build 15063.250)                  https://     2 4016240   article
+ 58 KB4015583 (OS Build 15063.138)                  https://     2 4015583   article
+ 56 KB4016251 (OS Build 15063.13)                   https://     2 4016251   article
+  2 Windows 10 version 1607 and Windows Server 2016 https://     1 4000825   article
+142 KB4088787 (OS Build 14393.2125 and 14393.2126)               2 4088787   article
+132 KB4077525 (OS Build 14393.2097)                              2 4077525   article
+136 KB4074590 (OS Build 14393.2068)                              2 4074590   article
+126 KB4057142 (OS Build 14393.2034)                              2 4057142   article
+122 KB4056890 (OS Build 14393.2007)                              2 4056890   article
+114 KB4053579 (OS Build 14393.1944)                              2 4053579   article
+110 KB4051033 (OS Build 14393.1914)                              2 4051033   article
+105 KB4048953 (OS Build 14393.1884)                              2 4048953   article
+102 KB4052231 (OS Build 14393.1797)                              2 4052231   article
+100 KB4041688 (OS Build 14393.1794)                 https://     2 4041688   article
+ 97 KB4041691 (OS Build 14393.1770)                 https://     2 4041691   article
+ 92 KB4038801 (OS Build 14393.1737)                 https://     2 4038801   article
+ 89 KB4038782 (OS Build 14393.1715)                 https://     2 4038782   article
+ 86 KB4039396 (OS Build 14393.1670)                 https://     2 4039396   article
+ 85 KB4034661 (OS Build 14393.1613)                 https://     2 4034661   article
+ 82 KB4034658 (OS Build 14393.1593)                 https://     2 4034658   article
+ 87 KB4038220 (OS Build 14393.1537)                 https://     2 4038220   article
+ 79 KB4025334 (OS Build 14393.1532)                 https://     2 4025334   article
+ 77 KB4025339 (OS Build 14393.1480)                 https://     2 4025339   article
+ 72 KB4022723 (OS Build 14393.1378)                 https://     2 4022723   article
+ 67 KB4022715 (OS Build 14393.1358)                 https://     2 4022715   article
+ 66 KB4023680 (OS Build 14393.1230)                 https://     2 4023680   article
+ 62 KB4019472 (OS Build 14393.1198)                 https://     2 4019472   article
+ 59 KB4015217 (OS Build 14393.1066 and 14393.1083)  https://     2 4015217   article
+ 51 KB4016635 (OS Build 14393.970)                  https://     2 4016635   article
+ 50 KB4015438 (OS Build 14393.969)                  https://     2 4015438   article
+ 49 KB4013429 (OS Build 14393.953)                  https://     2 4013429   article
+ 46 KB4010672 (OS Build 14393.729)                  https://     2 4010672   article
+ 44 KB3216755 (OS Build 14393.726)                  https://     2 4011347   article
+ 26 KB3213986 (OS Build 14393.693)                  https://     2 4009938   article
+  1 KB3206632 (OS Build 14393.576)                  https://     2 4004227   article
+ 22 KB3201845 (OS Build 14393.479)                  https://     2 4004253   article
+  3 KB3200970 (OS Build 14393.448)                  https://     2 4001886   article
+  5 KB3200970 (OS Build 14393.447)                  https://     2 4001885   article
+  7 KB3197954 (OS Build 14393.351)                  https://     2 4001753   article
+  8 KB3194798 (OS Build 14393.321)                  https://     2 4001754   article
+ 23 KB3194496 (OS Builds 14393.222)                 https://     2 4001755   article
+ 24 KB3193494 (OS Builds 14393.187 and 14393.189)   https://     2 4001756   article
+ 25 KB3189866 (OS Builds 14393.187 and 14393.189)   https://     2 4001757   article
+ 19 KB3176938 (OS Build 14393.105)                  https://     2 4001758   article
+ 27 KB3176934 (OS Build 14393.82)                   https://     2 4001759   article
+ 28 KB3176495 (OS Build 14393.51)                   https://     2 4001760   article
+ 29 KB3176929 (OS Build 14393.10)                   https://     2 4001761   article
+  6 Windows 10 version 1511                         https://     1 4000824   article
+146 KB4088779 (OS Build 10586.1478)                              2 4088779   article
+137 KB4074591 (OS Build 10586.1417)                              2 4074591   article
+125 KB4075200 (OS Build 10586.1358)                              2 4075200   article
+124 KB4056888 (OS Build 10586.1356)                              2 4056888   article
+113 KB4053578 (OS Build 10586.1295)                              2 4053578   article
+104 KB4048952 (OS Build 10586.1232)                              2 4048952   article
+103 KB4052232 (OS Build 10586.1177)                              2 4052232   article
+ 95 KB4041689 (OS Build 10586.1176)                 https://     2 4041689   article
+ 91 KB4038783 (OS Build 10586.1106)                 https://     2 4038783   article
+ 81 KB4034660 (OS Build 10586.1045)                 https://     2 4034660   article
+ 78 KB4025344 (OS Build 10586.1007)                 https://     2 4025344   article
+ 73 KB4032693 (OS Build 10586.965)                  https://     2 4032693   article
+ 68 KB4022714 (OS Build 10586.962)                  https://     2 4022714   article
+ 61 KB4019473 (OS Build 10586.916)                  https://     2 4019473   article
+ 57 KB4015219 (OS Build 10586.873)                  https://     2 4015219   article
+ 52 KB4016636 (OS Build 10586.842)                  https://     2 4016636   article
+ 48 KB4013198 (OS Build 10586.839)                  https://     2 4013198   article
+ 33 KB3210721 (OS Build 10586.753)                  https://     2 4009939   article
+  4 KB3205386 (OS Build 10586.713)                  https://     2 4004229   article
+ 45 KB3198586 (OS Build 10586.682)                  https://     2 4001884   article
+ 43 KB3198586 (OS Build 10586.679)                  https://     2 4001883   article
+ 37 KB3192441 (OS Build 10586.633)                  https://     2 4001762   article
+ 30 KB3185614 (OS Build 10586.589)                  https://     2 4001763   article
+ 31 KB3176493 (OS Build 10586.545)                  https://     2 4001764   article
+ 32 KB3172985 (OS Build 10586.494)                  https://     2 4001765   article
+ 34 KB3163018 (OS Build 10586.420)                  https://     2 4001766   article
+ 36 KB3156421 (OS Build 10586.318)                  https://     2 4001767   article
+ 38 KB3147458 (OS Build 10586.218)                  https://     2 4001768   article
+ 39 KB3140768 (OS Build 10586.164)                  https://     2 4001769   article
+ 40 KB3140743 (OS Build 10586.122)                  https://     2 4001770   article
+ 41 KB3135173 (OS Build 10586.104)                  https://     2 4001771   article
+  9 Windows 10 (initial version released July 2015) https://     1 4000823   article
+145 KB4088786 (OS Build 10240.17797)                             2 4088786   article
+138 KB4074596 (OS Build 10240.17770)                             2 4074596   article
+131 KB4077735 (OS Build 10240.17741)                             2 4077735   article
+128 KB4075199 (OS Build 10240.17741)                             2 4075199   article
+123 KB4056893 (OS Build 10240.17738)                             2 4056893   article
+116 KB4053581 (OS Build 10240.17709)                             2 4053581   article
+109 KB4048956 (OS Build 10240.17673)                             2 4048956   article
+ 96 KB4042895 (OS Build 10240.17643)                https://     2 4042895   article
+ 90 KB4038781 (OS Build 10240.17609)                https://     2 4038781   article
+ 83 KB4034668 (OS Build 10240.17533)                https://     2 4034668   article
+ 75 KB4025338 (OS Build 10240.17488)                https://     2 4025338   article
+ 74 KB4032695 (OS Build 10240.17446)                https://     2 4032695   article
+ 69 KB4022727 (OS Build 10240.17443)                https://     2 4022727   article
+ 63 KB4019474 (OS Build 10240.17394)                https://     2 4019474   article
+ 55 KB4015221 (OS Build 10240.17354)                https://     2 4015221   article
+ 53 KB4016637 (OS Build 10240.17320)                https://     2 4016637   article
+ 47 KB4012606 (OS Build 10240.17319)                https://     2 4012606   article
+ 35 KB3210720 (OS Build 10240.17236)                https://     2 4009941   article
+ 15 KB3205383 (OS Build 10240.17202)                https://     2 4004230   article
+ 42 KB3198585 (OS Build 10240.17190)                https://     2 4001882   article
+ 11 KB3192440 (OS Build 10240.17146)                https://     2 4001772   article
+ 10 KB3193821 (OS Build 10240.17113)                https://     2 4001773   article
+ 12 KB3185611 (OS Build 10240.17113)                https://     2 4001774   article
+ 13 KB3176492 (OS Build 10240.17071)                https://     2 4001775   article
+ 14 KB3163912 (OS Build 10240.17024)                https://     2 4001776   article
+ 16 KB3163017 (OS Build 10240.16942)                https://     2 4001777   article
+ 17 KB3156387 (OS Build 10240.16854)                https://     2 4001778   article
+ 18 KB3147461 (OS Build 10240.16769)                https://     2 4001779   article
+ 20 KB3140745 (OS Build 10240.16725)                https://     2 4001780   article
+ 21 KB3135174 (OS Build 10240.16683)                https://     2 4001781   article
