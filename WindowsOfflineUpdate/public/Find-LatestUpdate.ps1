@@ -17,6 +17,7 @@ Windows 10 Build Number used to filter available Downloads
     14393 - Windows 10 Version 1607 and Windows Server 2016
     15063 - Windows 10 Version 1703
     16299 - WIndows 10 Version 1709
+	17134 - Windows 10 Version 1803 						(default value)
 
 
     .PARAMETER Platform
@@ -30,7 +31,7 @@ Windows hardware platform to select updates for.  Parameter can take the followi
     .PARAMETER Type
 Update type. Parameter can take the following values:
 
-    Cumulative  (dafault)
+    Cumulative  (default value)
     Delta
 
 
@@ -56,7 +57,7 @@ Get link to the latest Cumulative update for Windows 10 x86
 
 
     .EXAMPLE
-Get the latest Cumulative Update for Windows Server 2016
+Get the latest Cumulative Update for the build 14393, x64 platform
 
     Find-LatestUpdate -filter Cumulative, x64 -build 14393
 
@@ -69,7 +70,7 @@ Get the latest Cumulative Updates for Windows 10 (both x86 and x64) and download
 
     .EXAMPLE
 Get the latest cumulative update for x64 platform
-    Find-LatestUpdate -build 16299 | ? { ($_.Platform -eq x64) -and ($_.Type -eq Cumulative) }
+    Find-LatestUpdate -build 17134 | ? { ($_.Platform -eq x64) -and ($_.Type -eq Cumulative) }
 
 #>
 
@@ -80,8 +81,8 @@ Get the latest cumulative update for x64 platform
                 HelpMessage = "Windows build number.",
                 Position = 0
             )]
-            [ValidateSet( '16299', '15063', '14393', '10586', '10240' )]
-        $Build = '16299',
+            [ValidateSet( '17134', '16299', '15063', '14393', '10586', '10240' )]
+        $Build = '17134',
 
         [String]
             [Parameter(
